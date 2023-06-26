@@ -9,7 +9,7 @@ trigger:
 pool:
   name: Default
   demands: 
-    Unity_2019.3.2f1
+    Unity_2021.3.24f1
 
 steps:
 #cleanup for unity build
