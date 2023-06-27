@@ -13,8 +13,10 @@ pool:
 steps:
 - task: UnityBuildTask@3
   inputs:
-    buildTarget: 'Win64'
-    unityProjectPath: 'Unity Source\test-project'
-    versionSelectionMode: '2021.3.24f1'
+    buildTarget: 'standalone'
+    unityEditorsPathMode: 'specify'
+    customUnityEditorsPath: 'C:\Program Files\Unity\Hub\Editor'
+    versionSelectionMode: 'project'
     outputPath: '$(Build.BinariesDirectory)'
     outputFileName: 'test-project-output'
+#hi
