@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+- main
 
 pool:
   name: Default
@@ -14,8 +14,6 @@ steps:
 - task: UnityBuildTask@3
   inputs:
     buildTarget: 'standalone'
-    unityEditorsPathMode: 'specify'
-    customUnityEditorsPath: 'C:\Program Files\Unity\Hub\Editor'
     versionSelectionMode: 'project'
     outputPath: '$(Build.BinariesDirectory)'
     outputFileName: 'test-project-output'
